@@ -1,4 +1,26 @@
-/******************  Слияние  *******************/
+/***************************************************/
+/******************  Коментарии  *******************/
+/***************************************************/
+
+/****************** Стили для слайдера gallery-1 *******************/
+/**************** Стили для слайдера gallery-2-1 *******************/
+/**************** Стили для слайдера gallery-2-2 *******************/
+/****************** Стили для слайдера gallery-3 *******************/
+/****************** Стили для слайдера gallery-4 *******************/
+/****************** Стили для слайдера gallery-5 *******************/
+/****************** Стили для слайдера gallery-5-2 *******************/
+/****************** Стили для слайдера gallery-5-3 *******************/
+/****************** Стили для слайдера gallery-5-4 *******************/
+/****************** Стили для текста gallery ***********************/
+/* Это значение двигает точки вверх вниз */
+/* Расположение точек по горизонтали */
+/* Размер точек */
+/* Тут меняется высота картинки */
+
+/***************************************************/
+/******************  Коментарии-конец  *************/
+/***************************************************/
+
 button:active, button:focus {
   outline: none !important;
 }
@@ -313,7 +335,7 @@ button::-moz-focus-inner {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0;
+	padding: 0; /* Размер точек */
 	position: absolute;
     bottom: 3px; /* Это значение двигает точки вверх вниз */
     left: 50%; /* Расположение точек по горизонтали */
@@ -322,6 +344,10 @@ button::-moz-focus-inner {
 .gallery-slider .slick-dots li{
 	list-style: none;
 	margin: 0px 10px;
+}
+.gallery-slider .slick-dots li.slick-active button{
+	background-color: #fff;
+	
 }
 .gallery-slider .slick-dots button{
 	font-size: 0;
@@ -334,10 +360,7 @@ button::-moz-focus-inner {
 	cursor: pointer;
 }
 
-.gallery-slider .slick-dots li.slick-active button{
-	background-color: #fff;
-	
-}
+
 
 /* Стили для кнопок */ 
 /* Обертка кнопок */ 
@@ -401,7 +424,7 @@ button::-moz-focus-inner {
 
 .gallery-slider-2-1 .slick-track {
     display: flex;
-    height: 100%;
+    height: 100%; /* Тут меняется высота картинки */
 }
 
 .gallery-slider-2-1 .gallery-slider__item {
@@ -450,7 +473,7 @@ button::-moz-focus-inner {
 
 .gallery-slider-2-2 .slick-track {
     display: flex;
-    height: 100%;
+    height: 100%; /* Тут меняется высота картинки */
     justify-content: space-around;
 }
 
@@ -480,12 +503,12 @@ button::-moz-focus-inner {
     width: 45px;
     height: 45px;
 }
-
+/* Точки (булиты) */ 
 .gallery-slider-2-2 .slick-dots{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0;
+	padding: 0; /* Размер точек */
 	position: absolute;
     bottom: 0px; /* Это значение двигает точки вверх вниз */
     left: 50%; /* Расположение точек по горизонтали */
@@ -531,7 +554,7 @@ button::-moz-focus-inner {
 
 .gallery-slider-3 .slick-track {
     display: flex;
-    height: 100%;
+    height: 100%; /* Тут меняется высота картинки */
 }
 
 .gallery-slider-3 .gallery-slider__item {
@@ -549,12 +572,12 @@ button::-moz-focus-inner {
     margin: auto 0;
 }
 
-/* Точки */ 
+/* Точки (булиты) */  
 .gallery-slider-3 .slick-dots{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0;
+	padding: 0; /* Размер точек */
 	position: absolute;
     bottom: 20px; /* Это значение двигает точки вверх вниз */
     left: 50%; /* Расположение точек по горизонтали */
@@ -601,7 +624,7 @@ button::-moz-focus-inner {
 
 .gallery-slider-4 .slick-track {
     display: flex;
-    height: 100%;
+    height: 100%; /* Тут меняется высота картинки */
 }
 
 .gallery-slider-4 .gallery-slider__item {
@@ -675,7 +698,7 @@ button::-moz-focus-inner {
 
 .gallery-slider-5-1 .slick-track {
     display: flex;
-    height: 100%;
+    height: 100%; /* Тут меняется высота картинки */
 }
 
 .gallery-slider-5-1 .gallery-slider__item {
@@ -712,7 +735,7 @@ button::-moz-focus-inner {
 
 .gallery-slider-5-2 .slick-track {
     display: flex;
-    height: 100%;
+    height: 100%; /* Тут меняется высота картинки */
 }
 
 .gallery-slider-5-2 .gallery-slider__item {
@@ -749,7 +772,7 @@ button::-moz-focus-inner {
 
 .gallery-slider-5-3 .slick-track {
     display: flex;
-    height: 100%;
+    height: 100%; /* Тут меняется высота картинки */
 }
 
 .gallery-slider-5-3 .gallery-slider__item {
@@ -786,7 +809,7 @@ button::-moz-focus-inner {
 
 .gallery-slider-5-4 .slick-track {
     display: flex;
-    height: 100%;
+    height: 100%; /* Тут меняется высота картинки */
 }
 
 .gallery-slider-5-4 .gallery-slider__item {
