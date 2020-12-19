@@ -15,6 +15,8 @@
 /* Размер точек */
 /* Тут меняется высота картинки */
 
+/******************  Стили для img-3ps  *******************/
+
 /***************************************************/
 /******************  Коментарии-конец  *************/
 /***************************************************/
@@ -182,6 +184,41 @@ button::-moz-focus-inner {
 	-webkit-backdrop-filter: blur(15px) !important;
 }
 
+/******************  Стили для img-3ps  *******************/
+.img-3ps {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
+
+.img-3ps-1 {
+	position: static !important;
+	width: auto !important;
+}
+
+.img-3ps-2 {
+	position: static !important;
+	width: auto !important;
+	margin-right: 20px;
+}
+
+.img-3ps-3 {
+	position: static !important;
+	width: auto !important;
+	margin-right: 20px;
+}
+
+.img-3ps-1 img {
+	position: static !important;
+}
+
+.img-3ps-2 img {
+	position: static !important;
+}
+
+.img-3ps-3 img {
+	position: static !important;
+}
 
 /*******************************************************************/
 /******************  Стили для слайдера БАЗОВЫЕ  *******************/
