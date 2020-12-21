@@ -233,7 +233,7 @@ button::-moz-focus-inner {
 	-webkit-width: auto !important;
 	-webkit-position: static !important;
 
-	width: auto;
+	width: auto !important;
 	position: static !important;
 }
 
@@ -241,7 +241,7 @@ button::-moz-focus-inner {
 	-webkit-width: auto !important;
 	-webkit-position: static !important;
 
-	width: auto;
+	width: auto !important;
 	position: static !important;
 }
 
