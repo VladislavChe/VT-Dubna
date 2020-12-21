@@ -184,37 +184,58 @@ button::-moz-focus-inner {
 
 /******************  Стили для img-3ps  *******************/
 .img-3ps {
+	-webkit-display: flex !important;
+	-webkit-justify-content: center !important;
+	-webkit-align-items: center !important;
+
 	display: flex !important;
 	justify-content: center !important;
 	align-items: center !important;
 }
 
 .img-3ps-1 {
+	-webkit-position: static !important;
+	-webkit-width: auto !important;
+
 	position: static !important;
 	width: auto !important;
 }
 
 .img-3ps-2 {
+	-webkit-position: static !important;
+	-webkit-width: auto !important;
+	-webkit-margin-right: 20px;
+
 	position: static !important;
 	width: auto !important;
 	margin-right: 20px;
 }
 
 .img-3ps-3 {
+	-webkit-position: static !important;
+	-webkit-width: auto !important;
+	-webkit-margin-right: 20px;
+
 	position: static !important;
 	width: auto !important;
 	margin-right: 20px;
 }
 
 .img-3ps-1 img {
+	-webkit-position: static !important;
+
 	position: static !important;
 }
 
 .img-3ps-2 img {
+	-webkit-position: static !important;
+
 	position: static !important;
 }
 
 .img-3ps-3 img {
+	-webkit-position: static !important;
+
 	position: static !important;
 }
 
