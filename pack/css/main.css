@@ -222,20 +222,26 @@ button::-moz-focus-inner {
 }
 
 .img-3ps-1 img {
+	-webkit-width: auto !important;
 	-webkit-position: static !important;
 
+	width: auto !important;
 	position: static !important;
 }
 
 .img-3ps-2 img {
+	-webkit-width: auto !important;
 	-webkit-position: static !important;
 
+	width: auto;
 	position: static !important;
 }
 
 .img-3ps-3 img {
+	-webkit-width: auto !important;
 	-webkit-position: static !important;
 
+	width: auto;
 	position: static !important;
 }
 
