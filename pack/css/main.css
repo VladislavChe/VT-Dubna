@@ -246,6 +246,15 @@ button:active, button:focus {
 	width: auto !important;
 	position: static !important;
 }
+
+  /******************  Стили для img-midl-block  *******************/
+.midl-block {
+	position: relative !important;
+}
+
+.img-midl-block {
+	position: absolute !important;
+}
   
   /*******************************************************************/
   /******************  Стили для слайдера БАЗОВЫЕ  *******************/
