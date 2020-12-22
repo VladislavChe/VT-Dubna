@@ -250,10 +250,12 @@ border: 0 !important;
 /******************  Стили для img-midl-block  *******************/
 
 .img-midl-block {
+	-webkit-width: auto !important;
 	width: auto !important;
 }
 
 .img-midl-block img {
+	-webkit-width: auto !important;
 	width: auto !important;
 }
 
