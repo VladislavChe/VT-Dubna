@@ -258,8 +258,21 @@ border: 0 !important;
 	-webkit-width: auto !important;
 	width: auto !important;
 }
+/******************  Стили для map  *******************/
+.map-block {
+	position: relative !important;
+}
 
+.map-wrapp {
+	position: static !important;
+	width: auto !important;
+	background: blue !important;
+}
 
+.map-img img {
+	width: auto !important;
+	
+}
 /*******************************************************************/
 /******************  Стили для слайдера БАЗОВЫЕ  *******************/
 /*******************************************************************/
