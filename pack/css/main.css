@@ -740,6 +740,8 @@ margin-top: 20px; /* Это значение двигает ПУ вверх вн
 /****************** Стили для слайдера gallery-5 *******************/
 /*******************************************************************/
 
+
+
 .ggskin.ggskin_subelement.ggskin_scrollarea {
 	width: 190px !important;
 	padding-bottom: 10px !important;
@@ -952,6 +954,35 @@ margin-top: 20px; /* Это значение двигает ПУ вверх вн
 	align-items: center;
 	margin: auto;
 
+}
+
+
+
+
+.tmb .ggskin_scrollarea {
+	width: 100% !important;
+}
+
+.tmb .ggskin.ggskin_subelement.ggskin_scrollarea {
+	width: 100% !important;
+	padding: 0 !important;
+}
+
+.tmb .ggskin.ggskin_subelement {
+	width: 100% !important;
+}
+
+.tmb .ggskin_cloner {
+	max-width: 100px !important;
+}
+
+.tmb .ggskin_cloner div {
+	width: 100% !important;
+}
+
+.tmb .ggskin .ggskin_nodeimage img {
+	height: auto !important;
+	max-height: 100% !important;
 }
 
 
