@@ -295,6 +295,26 @@ $(document).ready(function(){
     });
 
 /* Инициализация gallery-slider-5-4 в html-END */
+
+/* Инициализация gallery-slider-tmb в html */
+    $('.gallery-slider-tmb').slick({ 
+
+        /* Настройки слайдера */
+        centerMode: true,
+        slidesToShow: 5,
+        arrows: false, /* Вкл/выкл стрелок вперед, назад */
+        dots: false, /* Вкл/выкл точек (булетов) */
+        adaptiveHeight: false, /* Вкл/выкл адаптивной высоты */
+        autoplay: true, /* Вкл/выкл автопрокрутки */
+        autoplaySpeed: 2500, /* Скорость автопрокрутки */  
+        waitForAnimate: false, /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */
+        appendArrows: $('.button-wrapper'), /* смена расположения стрелок */
+        easing: 'ease', /* Тип анимации */
+        speed: 1000, /* Скорость анимации */
+
+    });
+
+/* Инициализация gallery-slider-tmb в html-END */
 });
 
 
