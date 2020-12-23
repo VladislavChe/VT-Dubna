@@ -7,10 +7,7 @@
 /* Инициализация gallery-slider-2-2 в html */
 /* Инициализация gallery-slider-3 в html */
 /* Инициализация gallery-slider-4 в html */
-/* Инициализация gallery-slider-5-1 в html */
-/* Инициализация gallery-slider-5-2 в html */
-/* Инициализация gallery-slider-5-3 в html */
-/* Инициализация gallery-slider-5-4 в html */
+/* Инициализация gallery-slider-5 в html */
 /* Скорость автопрокрутки */
 /* Скорость анимации */
 /* Вкл/выкл точек (булетов) */
@@ -98,10 +95,12 @@ $(document).ready(function(){
     $('.gallery-slider-3').slick({ 
 
         /* Настройки слайдера */
+        slidesToShow: 3,
+        slidesToScroll: 3,
         arrows:false, /* Вкл/выкл стрелок вперед, назад */
         dots: true, /* Вкл/выкл точек (булетов) */
         adaptiveHeight: false, /* Вкл/выкл адаптивной высоты */
-        autoplay: true, /* Вкл/выкл автопрокрутки */
+        autoplay: false, /* Вкл/выкл автопрокрутки */
         autoplaySpeed: 2500, /* Скорость автопрокрутки */  
         waitForAnimate: false, /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */
         appendArrows: $('.button-wrapper'), /* смена расположения стрелок */

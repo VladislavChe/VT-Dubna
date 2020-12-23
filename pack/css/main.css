@@ -650,6 +650,7 @@ margin-top: 20px; /* Это значение двигает ПУ вверх вн
 	text-align: center;
 	justify-content: center;
 	height: 100%;
+	padding: 0 5px;
 }
 
 /* Картинки */ 
@@ -674,13 +675,13 @@ margin-top: 20px; /* Это значение двигает ПУ вверх вн
 }
 .gallery-slider-3 .slick-dots li{
 	list-style: none;
-	margin: 0px 3px;
+	margin: 0px 5px;
 }
 .gallery-slider-3 .slick-dots button{
 	font-size: 0;
 	width: 5px;
 	height: 5px;
-	padding: 2px; /* Размер точек */
+	padding: 3px; /* Размер точек */
 	background-color: transparent;
 	border-radius: 50%;
 	border: 1px solid #fff;
