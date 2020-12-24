@@ -741,14 +741,14 @@ margin-top: 20px; /* Это значение двигает ПУ вверх вн
 /****************** Стили для слайдера gallery-5 *******************/
 /*******************************************************************/
 
-.ggskin.ggskin_subelement.ggskin_scrollarea {
+/* .ggskin.ggskin_subelement.ggskin_scrollarea {
 	width: 190px !important;
 	padding-bottom: 10px !important;
 }
 
 .ggskin_scrollarea {
 	width: 215px !important;
-}
+} */
 
 .scrollarea-gal-1 {
 	top: 10px !important;
