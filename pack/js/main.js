@@ -474,8 +474,7 @@ $(document).ready(function(){
     }
     })(createjs = createjs||{}, AdobeAn = AdobeAn||{});
     var createjs, AdobeAn;
-    </script>
-    <script>
+    
     var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
     function init() {
         canvas = document.getElementById("canvas");
