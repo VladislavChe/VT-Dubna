@@ -298,6 +298,8 @@ $(document).ready(function(){
 
 
 
+
+/* Код для move-line-START */
 (function (cjs, an) {
     var p; // shortcut to reference prototypes
     var lib={};var ss={};var img={};
@@ -474,7 +476,7 @@ $(document).ready(function(){
     }
     })(createjs = createjs||{}, AdobeAn = AdobeAn||{});
     var createjs, AdobeAn;
-    
+
     var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
     function init() {
         canvas = document.getElementById("canvas");
@@ -497,7 +499,8 @@ $(document).ready(function(){
             createjs.Ticker.addEventListener("tick", stage);
         }	    
         //Code to support hidpi screens and responsive scaling.
-        AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+        AdobeAn.makeResponsive(true,'both',true,1,[canvas,anim_container,dom_overlay_container]);	
         AdobeAn.compositionLoaded(lib.properties.id);
         fnStartAnimation();
     }
+    /* Код для move-line-END */
