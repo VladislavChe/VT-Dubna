@@ -946,11 +946,12 @@ button::-moz-focus-inner {
   background-color: #fff;
 }
 
+/* Стили для названия картинок */
 .gallery-slider-7 h3 {
-  font-size: 12px;
-  color: yellow;
-  max-width: 100%;
-  white-space: normal !important; /*Отображение пробелов между словами */
+  font-size: 12px; /* Размер шрифта */
+  color: yellow; /* Цвета */
+  max-width: 100%; /* Максимальная ширина */
+  white-space: normal !important; /* Нормальный перенос текста на новую строку */
 }
 
 /* Стили для слайдера gallery-7-галерея с названиями картинок END */
