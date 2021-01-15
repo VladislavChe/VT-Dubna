@@ -18,283 +18,343 @@
 /***************************************************/
 
 /* Включение главной функции jQuery */
-$(document).ready(function(){
-/* Инициализация gallery-slider-1 в html */
-    $('.gallery-slider').slick({ 
+$(document).ready(function () {
+  /* Инициализация gallery-slider-1 в html */
+  $('.gallery-slider').slick({
+    /* Настройки слайдера */
+    arrows: true /* Вкл/выкл стрелок вперед, назад */,
+    dots: true /* Вкл/выкл точек (булетов) */,
+    adaptiveHeight: false /* Вкл/выкл адаптивной высоты */,
+    autoplay: true /* Вкл/выкл автопрокрутки */,
+    autoplaySpeed: 2500 /* Скорость автопрокрутки */,
+    waitForAnimate: false /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */,
+    appendArrows: $('.button-wrapper') /* смена расположения стрелок */,
+    easing: 'ease' /* Тип анимации */,
+    speed: 1000 /* Скорость анимации */,
+  });
 
-        /* Настройки слайдера */
-        arrows:true, /* Вкл/выкл стрелок вперед, назад */
-        dots: true, /* Вкл/выкл точек (булетов) */
-        adaptiveHeight: false, /* Вкл/выкл адаптивной высоты */
-        autoplay: true, /* Вкл/выкл автопрокрутки */
-        autoplaySpeed: 2500, /* Скорость автопрокрутки */  
-        waitForAnimate: false, /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */
-        appendArrows: $('.button-wrapper'), /* смена расположения стрелок */
-        easing: 'ease', /* Тип анимации */
-        speed: 1000, /* Скорость анимации */
+  /* Запуск слайдера по клику на кнопку Play */
+  $('.gallery-slider-play').click(function (event) {
+    $('.gallery-slider').slick('slickPlay');
+  });
+
+  /* Остановка слайдера по клику на кнопку Stop */
+  $('.gallery-slider-stop').click(function (event) {
+    $('.gallery-slider').slick('slickPause');
+  });
+  /* Инициализация gallery-slider-1 в html-END */
+
+  /* Инициализация gallery-slider-2 в html */
+  /* Инициализация gallery-slider-2-1 в html */
+  $('.gallery-slider-2-1').slick({
+    /* Настройки слайдера */
+    arrows: false /* Вкл/выкл стрелок вперед, назад */,
+    dots: false /* Вкл/выкл точек (булетов) */,
+    adaptiveHeight: false /* Вкл/выкл адаптивной высоты */,
+    autoplay: false /* Вкл/выкл автопрокрутки */,
+    autoplaySpeed: 2500 /* Скорость автопрокрутки */,
+    waitForAnimate: false /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */,
+    appendArrows: $('.button-wrapper') /* смена расположения стрелок */,
+    easing: 'ease' /* Тип анимации */,
+    speed: 1000 /* Скорость анимации */,
+    slidesToShow: 1 /* колличество слайдов для показа */,
+    slidesToScroll: 1 /* колличество слайдов для скролла */,
+    asNavFor: '.gallery-slider-2-2' /* связка слайдеров */,
+  });
+  /* Инициализация gallery-slider-2-1 в html-END */
+
+  /* Инициализация gallery-slider-2-2 в html */
+  $('.gallery-slider-2-2').slick({
+    /* Настройки слайдера */
+    arrows: false /* Вкл/выкл стрелок вперед, назад */,
+    dots: false /* Вкл/выкл точек (булетов) */,
+    adaptiveHeight: false /* Вкл/выкл адаптивной высоты */,
+    autoplay: false /* Вкл/выкл автопрокрутки */,
+    autoplaySpeed: 2500 /* Скорость автопрокрутки */,
+    waitForAnimate: false /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */,
+    appendArrows: $('.button-wrapper') /* смена расположения стрелок */,
+    easing: 'ease' /* Тип анимации */,
+    speed: 1000 /* Скорость анимации */,
+    slidesToShow: 5 /* колличество слайдов для показа */,
+    slidesToScroll: 1 /* колличество слайдов для скролла */,
+    asNavFor: '.gallery-slider-2-1' /* связка слайдеров */,
+    focusOnSelect: true /* переключаться на выбранный слайд */,
+    variableWidth: false,
+    centerMode: true /* текущий слайд всегда по центру */,
+  });
+  /* Инициализация gallery-slider-2 в html-END */
+
+  /* Инициализация gallery-slider-3 в html */
+  $('.gallery-slider-3').slick({
+    /* Настройки слайдера */
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: false /* Вкл/выкл стрелок вперед, назад */,
+    dots: true /* Вкл/выкл точек (булетов) */,
+    adaptiveHeight: false /* Вкл/выкл адаптивной высоты */,
+    autoplay: false /* Вкл/выкл автопрокрутки */,
+    autoplaySpeed: 2500 /* Скорость автопрокрутки */,
+    waitForAnimate: false /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */,
+    appendArrows: $('.button-wrapper') /* смена расположения стрелок */,
+    easing: 'ease' /* Тип анимации */,
+    speed: 1700 /* Скорость анимации */,
+    fade: false /* Плавное растворение картинок */,
+  });
+  /* Инициализация gallery-slider-3 в html-END */
+
+  /* Инициализация gallery-slider-4 в html */
+  $('.gallery-slider-4').slick({
+    /* Настройки слайдера */
+    arrows: false /* Вкл/выкл стрелок вперед, назад */,
+    dots: false /* Вкл/выкл точек (булетов) */,
+    adaptiveHeight: false /* Вкл/выкл адаптивной высоты */,
+    autoplay: false /* Вкл/выкл автопрокрутки */,
+    autoplaySpeed: 1500 /* Скорость автопрокрутки */,
+    waitForAnimate: false /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */,
+    // appendArrows: $('.button-wrapper'), /* смена расположения стрелок */
+    easing: 'ease' /* Тип анимации */,
+    speed: 1700 /* Скорость анимации */,
+    fade: true /* Плавное растворение картинок */,
+  });
+  /* Инициализация gallery-slider-4 в html-END */
+
+  /* Инициализация gallery-slider-5-1 в html */
+  $('.gallery-slider-5-1').slick({
+    /* Настройки слайдера */
+    arrows: false /* Вкл/выкл стрелок вперед, назад */,
+    dots: false /* Вкл/выкл точек (булетов) */,
+    adaptiveHeight: false /* Вкл/выкл адаптивной высоты */,
+    autoplay: false /* Вкл/выкл автопрокрутки */,
+    autoplaySpeed: 2500 /* Скорость автопрокрутки */,
+    waitForAnimate: false /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */,
+    // appendArrows: $('.button-wrapper'), /* смена расположения стрелок */
+    easing: 'ease' /* Тип анимации */,
+    speed: 1700 /* Скорость анимации */,
+    fade: true /* Плавное растворение картинок */,
+  });
+
+  /* Запуск и остановка слайдера по наведению мыши */
+
+  $(function () {
+    var timeout;
+    function nextSlide() {
+      $('.gallery-slider-5-1').slick('slickNext');
+      timeout = setTimeout(function () {
+        nextSlide();
+      }, 3000);
+    }
+    function stopAutoplay(timeout) {
+      window.clearTimeout(timeout);
+    }
+    $('.gallery-slider-5-1').on('mouseenter', function () {
+      nextSlide();
     });
 
-    /* Запуск слайдера по клику на кнопку Play */
-    $('.gallery-slider-play').click(function(event) {
-        $('.gallery-slider').slick('slickPlay');
+    $('.gallery-slider-5-1').mouseleave(function (event) {
+      $('.gallery-slider-5-1').slick('slickPause');
+      $('.gallery-slider-5-1').slick('goTo', 0);
+      stopAutoplay(timeout);
+    });
+  });
+
+  /* Инициализация gallery-slider-5-1 в html-END */
+
+  /* Инициализация gallery-slider-5-2 в html */
+  $('.gallery-slider-5-2').slick({
+    /* Настройки слайдера */
+    arrows: false /* Вкл/выкл стрелок вперед, назад */,
+    dots: false /* Вкл/выкл точек (булетов) */,
+    adaptiveHeight: false /* Вкл/выкл адаптивной высоты */,
+    autoplay: false /* Вкл/выкл автопрокрутки */,
+    autoplaySpeed: 1500 /* Скорость автопрокрутки */,
+    waitForAnimate: false /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */,
+    // appendArrows: $('.button-wrapper'), /* смена расположения стрелок */
+    easing: 'ease' /* Тип анимации */,
+    speed: 1700 /* Скорость анимации */,
+    fade: true /* Плавное растворение картинок */,
+  });
+
+  /* Запуск и остановка слайдера по наведению мыши */
+
+  $(function () {
+    var timeout;
+    function nextSlide() {
+      $('.gallery-slider-5-2').slick('slickNext');
+      timeout = setTimeout(function () {
+        nextSlide();
+      }, 3000);
+    }
+    function stopAutoplay(timeout) {
+      window.clearTimeout(timeout);
+    }
+    $('.gallery-slider-5-2').on('mouseenter', function () {
+      nextSlide();
     });
 
-     /* Остановка слайдера по клику на кнопку Stop */
-    $('.gallery-slider-stop').click(function(event) {
-        $('.gallery-slider').slick('slickPause');
+    $('.gallery-slider-5-2').mouseleave(function (event) {
+      $('.gallery-slider-5-2').slick('slickPause');
+      $('.gallery-slider-5-2').slick('goTo', 0);
+      stopAutoplay(timeout);
     });
-    /* Инициализация gallery-slider-1 в html-END */
+  });
 
+  /* Инициализация gallery-slider-5-2 в html-END */
 
+  /* Инициализация gallery-slider-5-3 в html */
+  $('.gallery-slider-5-3').slick({
+    /* Настройки слайдера */
+    arrows: false /* Вкл/выкл стрелок вперед, назад */,
+    dots: false /* Вкл/выкл точек (булетов) */,
+    adaptiveHeight: false /* Вкл/выкл адаптивной высоты */,
+    autoplay: false /* Вкл/выкл автопрокрутки */,
+    autoplaySpeed: 1500 /* Скорость автопрокрутки */,
+    waitForAnimate: false /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */,
+    // appendArrows: $('.button-wrapper'), /* смена расположения стрелок */
+    easing: 'ease' /* Тип анимации */,
+    speed: 1700 /* Скорость анимации */,
+    fade: true /* Плавное растворение картинок */,
+  });
 
-/* Инициализация gallery-slider-2 в html */
-    /* Инициализация gallery-slider-2-1 в html */
-    $('.gallery-slider-2-1').slick({ 
+  /* Запуск и остановка слайдера по наведению мыши */
 
-        /* Настройки слайдера */
-        arrows:false, /* Вкл/выкл стрелок вперед, назад */
-        dots: false, /* Вкл/выкл точек (булетов) */
-        adaptiveHeight: false, /* Вкл/выкл адаптивной высоты */
-        autoplay: false, /* Вкл/выкл автопрокрутки */
-        autoplaySpeed: 2500, /* Скорость автопрокрутки */  
-        waitForAnimate: false, /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */
-        appendArrows: $('.button-wrapper'), /* смена расположения стрелок */
-        easing: 'ease', /* Тип анимации */
-        speed: 1000, /* Скорость анимации */
-        slidesToShow: 1, /* колличество слайдов для показа */
-        slidesToScroll: 1, /* колличество слайдов для скролла */
-        asNavFor: '.gallery-slider-2-2', /* связка слайдеров */
-    });
-    /* Инициализация gallery-slider-2-1 в html-END */
-
- 
-
-    /* Инициализация gallery-slider-2-2 в html */
-    $('.gallery-slider-2-2').slick({ 
-
-        /* Настройки слайдера */
-        arrows:false, /* Вкл/выкл стрелок вперед, назад */
-        dots: false, /* Вкл/выкл точек (булетов) */
-        adaptiveHeight: false, /* Вкл/выкл адаптивной высоты */
-        autoplay: false, /* Вкл/выкл автопрокрутки */
-        autoplaySpeed: 2500, /* Скорость автопрокрутки */  
-        waitForAnimate: false, /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */
-        appendArrows: $('.button-wrapper'), /* смена расположения стрелок */
-        easing: 'ease', /* Тип анимации */
-        speed: 1000, /* Скорость анимации */
-        slidesToShow: 5, /* колличество слайдов для показа */
-        slidesToScroll: 1, /* колличество слайдов для скролла */
-        asNavFor: '.gallery-slider-2-1', /* связка слайдеров */
-        focusOnSelect: true, /* переключаться на выбранный слайд */
-        variableWidth: false,
-        centerMode: true, /* текущий слайд всегда по центру */
-    });
-/* Инициализация gallery-slider-2 в html-END */
-
-/* Инициализация gallery-slider-3 в html */
-    $('.gallery-slider-3').slick({ 
-
-        /* Настройки слайдера */
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        arrows:false, /* Вкл/выкл стрелок вперед, назад */
-        dots: true, /* Вкл/выкл точек (булетов) */
-        adaptiveHeight: false, /* Вкл/выкл адаптивной высоты */
-        autoplay: false, /* Вкл/выкл автопрокрутки */
-        autoplaySpeed: 2500, /* Скорость автопрокрутки */  
-        waitForAnimate: false, /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */
-        appendArrows: $('.button-wrapper'), /* смена расположения стрелок */
-        easing: 'ease', /* Тип анимации */
-        speed: 1700, /* Скорость анимации */
-        fade: false, /* Плавное растворение картинок */
-    });
-/* Инициализация gallery-slider-3 в html-END */
-
-/* Инициализация gallery-slider-4 в html */
-    $('.gallery-slider-4').slick({ 
-
-        /* Настройки слайдера */
-        arrows:false, /* Вкл/выкл стрелок вперед, назад */
-        dots: false, /* Вкл/выкл точек (булетов) */
-        adaptiveHeight: false, /* Вкл/выкл адаптивной высоты */
-        autoplay: false, /* Вкл/выкл автопрокрутки */
-        autoplaySpeed: 1500, /* Скорость автопрокрутки */  
-        waitForAnimate: false, /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */
-        // appendArrows: $('.button-wrapper'), /* смена расположения стрелок */
-        easing: 'ease', /* Тип анимации */
-        speed: 1700, /* Скорость анимации */
-        fade: true, /* Плавное растворение картинок */
-    });
-/* Инициализация gallery-slider-4 в html-END */
-
-/* Инициализация gallery-slider-5-1 в html */
-    $('.gallery-slider-5-1').slick({ 
-
-        /* Настройки слайдера */
-        arrows:false, /* Вкл/выкл стрелок вперед, назад */
-        dots: false, /* Вкл/выкл точек (булетов) */
-        adaptiveHeight: false, /* Вкл/выкл адаптивной высоты */
-        autoplay: false, /* Вкл/выкл автопрокрутки */
-        autoplaySpeed: 2500, /* Скорость автопрокрутки */  
-        waitForAnimate: false, /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */
-        // appendArrows: $('.button-wrapper'), /* смена расположения стрелок */
-        easing: 'ease', /* Тип анимации */
-        speed: 1700, /* Скорость анимации */
-        fade: true, /* Плавное растворение картинок */
+  $(function () {
+    var timeout;
+    function nextSlide() {
+      $('.gallery-slider-5-3').slick('slickNext');
+      timeout = setTimeout(function () {
+        nextSlide();
+      }, 3000);
+    }
+    function stopAutoplay(timeout) {
+      window.clearTimeout(timeout);
+    }
+    $('.gallery-slider-5-3').on('mouseenter', function () {
+      nextSlide();
     });
 
-    /* Запуск и остановка слайдера по наведению мыши */    
+    $('.gallery-slider-5-3').mouseleave(function (event) {
+      $('.gallery-slider-5-3').slick('slickPause');
+      $('.gallery-slider-5-3').slick('goTo', 0);
+      stopAutoplay(timeout);
+    });
+  });
 
-    $(function(){
-        var timeout;
-        function nextSlide(){
-        $('.gallery-slider-5-1').slick('slickNext');
-        timeout = setTimeout(function(){
-            nextSlide();
-        },3000);
-        }
-        function stopAutoplay(timeout){
-            window.clearTimeout(timeout);
-        }
-        $('.gallery-slider-5-1').on('mouseenter', function(){
-            nextSlide();
-        });
+  /* Инициализация gallery-slider-5-3 в html-END */
 
-        $('.gallery-slider-5-1').mouseleave(function(event) {
-            $('.gallery-slider-5-1').slick('slickPause');
-            $('.gallery-slider-5-1').slick('goTo', 0);
-            stopAutoplay(timeout);
-        });
+  /* Инициализация gallery-slider-5-4 в html */
+  $('.gallery-slider-5-4').slick({
+    /* Настройки слайдера */
+    arrows: false /* Вкл/выкл стрелок вперед, назад */,
+    dots: false /* Вкл/выкл точек (булетов) */,
+    adaptiveHeight: false /* Вкл/выкл адаптивной высоты */,
+    autoplay: false /* Вкл/выкл автопрокрутки */,
+    autoplaySpeed: 1500 /* Скорость автопрокрутки */,
+    waitForAnimate: false /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */,
+    // appendArrows: $('.button-wrapper'), /* смена расположения стрелок */
+    easing: 'ease' /* Тип анимации */,
+    speed: 1700 /* Скорость анимации */,
+    fade: true /* Плавное растворение картинок */,
+  });
+
+  /* Запуск и остановка слайдера по наведению мыши */
+
+  $(function () {
+    var timeout;
+    function nextSlide() {
+      $('.gallery-slider-5-4').slick('slickNext');
+      timeout = setTimeout(function () {
+        nextSlide();
+      }, 3000);
+    }
+    function stopAutoplay(timeout) {
+      window.clearTimeout(timeout);
+    }
+    $('.gallery-slider-5-4').on('mouseenter', function () {
+      nextSlide();
     });
 
-/* Инициализация gallery-slider-5-1 в html-END */
-
-/* Инициализация gallery-slider-5-2 в html */
-    $('.gallery-slider-5-2').slick({ 
-
-        /* Настройки слайдера */
-        arrows:false, /* Вкл/выкл стрелок вперед, назад */
-        dots: false, /* Вкл/выкл точек (булетов) */
-        adaptiveHeight: false, /* Вкл/выкл адаптивной высоты */
-        autoplay: false, /* Вкл/выкл автопрокрутки */
-        autoplaySpeed: 1500, /* Скорость автопрокрутки */  
-        waitForAnimate: false, /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */
-        // appendArrows: $('.button-wrapper'), /* смена расположения стрелок */
-        easing: 'ease', /* Тип анимации */
-        speed: 1700, /* Скорость анимации */
-        fade: true, /* Плавное растворение картинок */
+    $('.gallery-slider-5-4').mouseleave(function (event) {
+      $('.gallery-slider-5-4').slick('slickPause');
+      $('.gallery-slider-5-4').slick('goTo', 0);
+      stopAutoplay(timeout);
     });
+  });
 
-    /* Запуск и остановка слайдера по наведению мыши */    
-
-    $(function(){
-        var timeout;
-        function nextSlide(){
-        $('.gallery-slider-5-2').slick('slickNext');
-        timeout = setTimeout(function(){
-            nextSlide();
-        },3000);
-        }
-        function stopAutoplay(timeout){
-            window.clearTimeout(timeout);
-        }
-        $('.gallery-slider-5-2').on('mouseenter', function(){
-            nextSlide();
-        });
-
-        $('.gallery-slider-5-2').mouseleave(function(event) {
-            $('.gallery-slider-5-2').slick('slickPause');
-            $('.gallery-slider-5-2').slick('goTo', 0);
-            stopAutoplay(timeout);
-        });
-    });
-
-/* Инициализация gallery-slider-5-2 в html-END */
-
-/* Инициализация gallery-slider-5-3 в html */
-    $('.gallery-slider-5-3').slick({ 
-
-        /* Настройки слайдера */
-        arrows:false, /* Вкл/выкл стрелок вперед, назад */
-        dots: false, /* Вкл/выкл точек (булетов) */
-        adaptiveHeight: false, /* Вкл/выкл адаптивной высоты */
-        autoplay: false, /* Вкл/выкл автопрокрутки */
-        autoplaySpeed: 1500, /* Скорость автопрокрутки */  
-        waitForAnimate: false, /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */
-        // appendArrows: $('.button-wrapper'), /* смена расположения стрелок */
-        easing: 'ease', /* Тип анимации */
-        speed: 1700, /* Скорость анимации */
-        fade: true, /* Плавное растворение картинок */
-    });
-
-    /* Запуск и остановка слайдера по наведению мыши */    
-
-    $(function(){
-        var timeout;
-        function nextSlide(){
-        $('.gallery-slider-5-3').slick('slickNext');
-        timeout = setTimeout(function(){
-            nextSlide();
-        },3000);
-        }
-        function stopAutoplay(timeout){
-            window.clearTimeout(timeout);
-        }
-        $('.gallery-slider-5-3').on('mouseenter', function(){
-            nextSlide();
-        });
-
-        $('.gallery-slider-5-3').mouseleave(function(event) {
-            $('.gallery-slider-5-3').slick('slickPause');
-            $('.gallery-slider-5-3').slick('goTo', 0);
-            stopAutoplay(timeout);
-        });
-    });
-
-/* Инициализация gallery-slider-5-3 в html-END */
-
-/* Инициализация gallery-slider-5-4 в html */
-    $('.gallery-slider-5-4').slick({ 
-
-        /* Настройки слайдера */
-        arrows:false, /* Вкл/выкл стрелок вперед, назад */
-        dots: false, /* Вкл/выкл точек (булетов) */
-        adaptiveHeight: false, /* Вкл/выкл адаптивной высоты */
-        autoplay: false, /* Вкл/выкл автопрокрутки */
-        autoplaySpeed: 1500, /* Скорость автопрокрутки */  
-        waitForAnimate: false, /* Для пролистывания след. слайда, не нужно ждать завершение анимации предыдущегоэ */
-        // appendArrows: $('.button-wrapper'), /* смена расположения стрелок */
-        easing: 'ease', /* Тип анимации */
-        speed: 1700, /* Скорость анимации */
-        fade: true, /* Плавное растворение картинок */
-    });
-
-    /* Запуск и остановка слайдера по наведению мыши */    
-
-    $(function(){
-        var timeout;
-        function nextSlide(){
-        $('.gallery-slider-5-4').slick('slickNext');
-        timeout = setTimeout(function(){
-            nextSlide();
-        },3000);
-        }
-        function stopAutoplay(timeout){
-            window.clearTimeout(timeout);
-        }
-        $('.gallery-slider-5-4').on('mouseenter', function(){
-            nextSlide();
-        });
-
-        $('.gallery-slider-5-4').mouseleave(function(event) {
-            $('.gallery-slider-5-4').slick('slickPause');
-            $('.gallery-slider-5-4').slick('goTo', 0);
-            stopAutoplay(timeout);
-        });
-    });
-
-/* Инициализация gallery-slider-5-4 в html-END */
+  /* Инициализация gallery-slider-5-4 в html-END */
 });
 
+/* РЕНТГЕН */
+$.fn.magnifierRentgen = function () {
+  return this.each(function () {
+    var th = $(this),
+      dataImage = th.data('image'),
+      dataImageZoom = th.data('image-zoom'),
+      dataSize = th.data('size');
 
+    th.addClass('magnifierRentgen')
+      .resize(function () {
+        th.find('.data-image, .magnifier-loupe img').css({
+          width: th.width(),
+        });
+      })
+      .append(
+        "<img class='data-image' src='" +
+          dataImage +
+          "'><div class='magnifier-loupe'><img src='" +
+          dataImageZoom +
+          "'>"
+      )
+      .hover(
+        function () {
+          th.find('.magnifier-loupe').stop().fadeIn();
+        },
+        function () {
+          th.find('.magnifier-loupe').stop().fadeOut();
+        }
+      )
+      .find('.data-image')
+      .css({
+        width: th.width(),
+      })
+      .parent()
+      .find('.magnifier-loupe')
+      .css({
+        width: dataSize,
+        height: dataSize,
+      })
+      .find('img')
+      .css({
+        position: 'absolute',
+        width: th.width(),
+      });
 
+    th.mousemove(function (e) {
+      var elemPos = {},
+        offset = th.offset();
+
+      elemPos = {
+        left: e.pageX - offset.left - dataSize / 2,
+        top: e.pageY - offset.top - dataSize / 2,
+      };
+
+      th.find('.magnifier-loupe')
+        .css({
+          top: elemPos['top'],
+          left: elemPos['left'],
+        })
+        .find('img')
+        .css({
+          top: -elemPos['top'],
+          left: -elemPos['left'],
+          width: th.width(),
+        });
+    });
+
+    $(window).resize(function () {
+      $('.magnifierRentgen').resize();
+    });
+  });
+};
+
+$('.div').magnifierRentgen();
+/* РЕНТГЕН-END */
