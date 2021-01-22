@@ -214,6 +214,15 @@ button::-moz-focus-inner {
 }
 
 /******************  Стили для img-midl-block  *******************/
+.wrapp-img-midl-block div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.midl-picture {
+  width: auto !important;
+  height: 90% !important;
+}
 
 .img-midl-block {
   -webkit-width: auto !important;
